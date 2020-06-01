@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classification Model: Churn Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<h1 style="text-align: center">Classification Model: Class Prediction </h1>
+    <form action="{{ url_for('class_predict')}}" method="POST" enctype="multipart/form-data">
+    <table>
+        <tr>
+	    <th>variable_0</th>
+	    <th>variable_1</th>
+	    <th>variable_2</th>
+	    <th>variable_3</th>
+	    <th>variable_4</th>
+	    <th>variable_5</th>
+	    <th>variable_6</th>
+	    <th>variable_7</th>
+	    <th>variable_8</th>
+	    <th>variable_9</th>
+        </tr>
+        <tr>
+            <td>
+            <textarea type="text" id="variable_0" name="variable_0" style="height:20px; width:150px"></textarea>
+            </td>
+            <td>
+            <textarea type="text" id="variable_1" name="variable_1" style="height:20px; width:150px"></textarea>
+            </td>                
+            <td>
+            <textarea type="text" id="variable_2" name="variable_2" style="height:20px; width:150px"></textarea>
+            </td>
+            <td>
+            <textarea type="text" id="variable_3" name="variable_3" style="height:20px; width:150px"></textarea>
+            </td>                
+            <td>
+            <textarea type="text" id="variable_4" name="variable_4" style="height:20px; width:150px"></textarea>
+            </td>
+            <td>
+            <textarea type="text" id="variable_5" name="variable_5" style="height:20px; width:200px"></textarea>
+            </td>                
+            <td>
+            <textarea type="text" id="variable_6" name="variable_6" style="height:20px; width:150px"></textarea>
+            </td>
+            <td>
+            <textarea type="text" id="variable_7" name="variable_7" style="height:20px; width:150px"></textarea>
+            </td>                
+            <td>
+            <textarea type="text" id="variable_8" name="variable_8" style="height:20px; width:150px"></textarea>
+            </td>
+            <td>
+            <textarea type="text" id="variable_9" name="variable_9" style="height:20px; width:150px"></textarea>
+            </td>                
+
+        </tr>
+    </table>
+    
+    <input  style="text-align: center" type="submit" value="Predict" >
+    </form>
+    <br>
+    {{ prediction }}
+</body>
+</html>
