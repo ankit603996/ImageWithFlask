@@ -1,1 +1,1 @@
-# MLDeploymentImageClassification
+# ML_Deployment_Image_Classification
