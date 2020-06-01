@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-<h1 style="text-align: center">Classification Model: Class Prediction </h1>
+<h1 style="text-align: center">Classification Model: Churn Prediction </h1>
+<h2 style="text-align: center">Variable Input </h2>
+
     <form action="{{ url_for('class_predict')}}" method="POST" enctype="multipart/form-data">
     <table>
         <tr>
@@ -64,7 +66,5 @@
     
     <input  style="text-align: center" type="submit" value="Predict" >
     </form>
-    <br>
-    {{ prediction }}
 </body>
 </html>

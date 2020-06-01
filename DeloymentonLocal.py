@@ -109,9 +109,9 @@ def class_predict():
                 class_col = np.where(class_col==0.0,'No Churn','Churn')
                 print('prediction done')
                 response = {"Deplyment_id": str(uuid.uuid4()), "class_prediction": str(class_col),"Total_errors_if_Any":errors}
-                return render_template('model.html', prediction = 'Results are {}'.format(response))
+                return render_template('model2.html', prediction = 'Results are {}'.format(response))
         except:
-                return render_template('model.html', prediction = 'No Results ')
+                return render_template('model2.html', prediction = 'No Results ')
 
 
 # In[444]:
